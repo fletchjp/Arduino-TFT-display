@@ -7,4 +7,8 @@
 
  There is a description there of the hardware and software used.
  
+## MCUFRIEND_clock
 
+ This is the code for Figure 1 suing the MCUFRIEND_kbv library.
+ 
+ 
