@@ -9,22 +9,18 @@
 //
 //<App !End!>
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+// GUICBUSclock.ino
+// This is the code for Figure 5 on this page.
+// https://www.merg.org.uk/merg_wiki/doku.php?id=arduino:projects:tftdisplay
+// This code is TOO LARGE for an Arduino UNO.
+// It can run on an Arduino MEGA 1280 or Arduino MEGA 2560.
+/////////////////////////////////////////////////////////////
 // This is a first example of a CBUS capable module, based on GUIclock.ino.
 // It adds buttons which are programmed to send events to CBUS.
 // There is no incoming event processing.
 // Much more could be done with multiple screens and popups to handle incoming events.
-
-////////////////////////////////////////////////////////////////////////
-// Display capture.
-// There is a version of this code called GUICBUSclock_copy_DUE.ino
-// which runs on an Arduino DUE with the CBUS code taken out of use.
-// The copy in the name is something I am using to show it is not a live code
-// except for use for display capture.
-// There are some variable names which the DUE defines including y0 and y1.
-// I have therefore to rename them in the copy code.
-// I am going to rename them anyway in this code so that when I copy from it
-// that problem is solved.
-////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
 
 // ------------------------------------------------
 // Headers to include
@@ -180,20 +176,6 @@ bool CbBtnCommon(void* pvGui,void *pvElemRef,gslc_teTouch eTouch,int16_t nX,int1
   }
   return true;
 }
-//<Checkbox Callback !Start!>
-//<Checkbox Callback !End!>
-//<Keypad Callback !Start!>
-//<Keypad Callback !End!>
-//<Spinner Callback !Start!>
-//<Spinner Callback !End!>
-//<Listbox Callback !Start!>
-//<Listbox Callback !End!>
-//<Draw Callback !Start!>
-//<Draw Callback !End!>
-//<Slider Callback !Start!>
-//<Slider Callback !End!>
-//<Tick Callback !Start!>
-//<Tick Callback !End!>
 
 /////////////////////////////////////////////////////////////////////////
 /// Clock code from GUIclock project
@@ -223,10 +205,9 @@ uint8_t hh=conv2d(__TIME__), mm=conv2d(__TIME__+3), ss=conv2d(__TIME__+6);  // G
 
 boolean initial = 1;
 
-// This is being called to replace what is in the box E_ELEM_BOX1
 // I have found out how to do this by comparison with ex06_ard_callback.ino
 // It is not possible to draw the background except within an element as it gets overwritten.
-// The call to this    callback is set up in InitGUIslice_gen and called when it thinks it necessary.
+// The call to this callback is set up in InitGUIslice_gen and called when it thinks it necessary.
 // This now does the static part of the clock with many parameters adjusted to get the location and size correct.
 // Changed to use pGui instead of &m_gui to refer to the GUI.
 bool CbDrawClock(void* pvGui,void* pvElemRef,gslc_teRedrawType eRedraw)
