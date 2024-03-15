@@ -9,11 +9,11 @@
 //
 //<App !End!>
 
-// This is derived from my MCUFRIEND example and adapted for the GUIslice framework. 
+// This is derived from my MCUFRIEND_clock.ino example and adapted for the GUIslice framework. 
 // The main difference from the previous code is that a lot of the parameters
 // are now defined in one place (many as global variables).
-// MCUFRIEND_clock.ino starting my own example
-// This is now a copy of the TFT_Clock example from the TFT_ILI9341 library
+// The main structure of the code is defined by GUIslice Builder
+// and other code is inserted.
 
 // ------------------------------------------------
 // Headers to include
