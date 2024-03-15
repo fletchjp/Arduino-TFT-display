@@ -11,7 +11,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // GUIclock.ino
-// This is the code for Figure 1 on this page.
+// This is the code for Figure 2 on this page.
 // https://www.merg.org.uk/merg_wiki/doku.php?id=arduino:projects:tftdisplay
 // This code is TOO LARGE for an Arduino UNO.
 // It can run on an Arduino MEGA 1280 or Arduino MEGA 2560.
