@@ -17,3 +17,8 @@ This is the code for Figure 2 using GUIslice Builder to generate the display.
 
 This code will not run on an Arduino UNO and requires a MEGA 1280 or MEGA 2560.
 
+## GUIthird
+
+This is the code for Figures 3 and 4 using GUIslice Builder to generate the display.
+
+This code will not run on an Arduino UNO and requires a MEGA 1280 or MEGA 2560.
