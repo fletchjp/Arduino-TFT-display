@@ -3,13 +3,16 @@
 // Using MCUDRIEND_kbv instead of the ELEGOO version
 // This code will compile on an Arduino UNO.
 /////////////////////////////////////////////////////////////
+// This is the code for Figure 1 on this page.
+// https://www.merg.org.uk/merg_wiki/doku.php?id=arduino:projects:tftdisplay
+/////////////////////////////////////////////////////////////
 
 #define USE_Elegoo_SHIELD_PINOUT
 #include <MCUFRIEND_kbv.h>
 
 // The control pins for the LCD can be assigned to any digital or
 // analog pins...but we'll use the analog pins as this allows us to
-// double up the pins with the touch screen (see the TFT paint example).
+// double up the pins with the touch screen.
 #define LCD_CS A3 // Chip Select goes to Analog 3
 #define LCD_CD A2 // Command/Data goes to Analog 2
 #define LCD_WR A1 // LCD Write goes to Analog 1
