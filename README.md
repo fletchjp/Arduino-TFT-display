@@ -9,6 +9,6 @@
  
 ## MCUFRIEND_clock
 
- This is the code for Figure 1 suing the MCUFRIEND_kbv library.
+ This is the code for Figure 1 using the MCUFRIEND_kbv library.
  
  
