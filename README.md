@@ -43,7 +43,7 @@ The type of display can be detected at run time.
 
 This means that the library codes have to be configured for the particular display being used. For some libraries there are a set of configuration files. The library code has to be edited to chose the correct one. That has to be changed if a different display is to be used.
 
-It is unusual for a user to have to edit the library files and this is normally discouraged as the edits will be lost if the library is updated.
+It is unusual for a user to have to edit library files and this is normally discouraged as the edits will be lost if the library is updated.
 
 More details to be added.
 
