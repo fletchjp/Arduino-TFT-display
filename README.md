@@ -47,3 +47,6 @@ It is unusual for a user to have to edit library files and this is normally disc
 
 More details to be added.
 
+# Memory usage
+
+I have been asked the question as to how these displays can possibly work on a MEGA which has only a small size of data memory. The answer is that most of the display data is fixed at compile time and can be stored as part of the program.
